@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15400" systemVersion="18G103" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Passport" representedClassName="Passport" syncable="YES" codeGenerationType="class">
+        <attribute name="number" optional="YES" attributeType="String"/>
+        <relationship name="person" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="passport" inverseEntity="Person"/>
+    </entity>
+    <entity name="Person" representedClassName="Person" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="passport" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Passport" inverseName="person" inverseEntity="Passport"/>
+    </entity>
+    <elements>
+        <element name="Person" positionX="-114.50390625" positionY="-16.5234375" width="128" height="73"/>
+        <element name="Passport" positionX="85.203125" positionY="-16.5625" width="128" height="73"/>
+    </elements>
+</model>
